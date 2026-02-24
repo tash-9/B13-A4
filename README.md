@@ -19,7 +19,7 @@ document.body.appendChild(newDiv);
 ### 3. What is Event Bubbling? And how does it work?
 ANS: Events bubble up from the target element to its ancestors
 <div id="parent">
-<button id="child">Click Me</button>
+<btn id="child">Click Me</btn>
 </div>
 document.getElementById('parent').addEventListener('click', () => {
 console.log('Parent clicked');
