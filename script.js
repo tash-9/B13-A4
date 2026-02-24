@@ -97,9 +97,7 @@ document.addEventListener("click", function (e) {
     filterTab(currentTab);
   }
 
-  
   const jobCards = document.querySelectorAll(".job-card");
-
 
   jobCards.forEach(card => {
     const statusText = card.querySelector(".status-text");
@@ -110,7 +108,6 @@ document.addEventListener("click", function (e) {
       statusText.textContent = "To be Interviewed";
       statusText.classList.remove("text-blue-600", "text-red-600");
       statusText.classList.add("text-green-600");
-
       card.dataset.status = "interview";
   });
 
@@ -118,7 +115,6 @@ document.addEventListener("click", function (e) {
     statusText.textContent = "Rejected";
     statusText.classList.remove("text-blue-600", "text-green-600");
     statusText.classList.add("text-red-600");
-
     card.dataset.status = "rejected";
   });
 
